@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/searchActivity"
+    tools:context="com.example.android.iread.searchActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/general_space"
+            android:layout_marginLeft="@dimen/general_space"
+            android:layout_marginBottom="@dimen/general_space">
+
+            <EditText
+                android:id="@+id/searchBook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="Search for books"
+                android:backgroundTint="@color/textColor"
+                android:inputType="textCapSentences" />
+            <Button
+                android:id="@+id/searchResult"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Search"
+                android:layout_marginRight="@dimen/general_space"
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+
+
+
+</FrameLayout>

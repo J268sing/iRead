@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary"> #00B0FF</color>
+
+    //this color has been used where we show wifi. battery% etc.
+    <color name="colorPrimaryDark">#0277BD</color>
+    <color name="colorAccent">#FF4081</color>
+
+    //this color has been used for icon and text of navigation bar
+    <color name = "white">#FFFFFF</color>
+    <color name = "textColor">#F4511E</color>
+    <color name = "separatingLine">#CFD8DC</color>
+    <color name="black">#000000</color>
+
+</resources>

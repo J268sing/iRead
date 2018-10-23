@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.iread.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                // aha 100 dp ali problem check karni aa je kite weights naal solve hoje
+
+                <ImageView
+                    android:id="@+id/imageView_Home"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home_fragment_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Reading is to the mind what exercise is to the body. \n
+                                                            ~Joseph Addison"
+                    android:textColor="#EEEEEE"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_space"
+                android:layout_marginLeft="@dimen/general_space"
+                android:layout_marginRight="@dimen/general_space"
+                android:layout_marginTop="@dimen/general_space"
+                android:text="Most Popular"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textsize_home" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_space"
+                android:text="Most Popular"
+                android:id="@+id/mostPopular"/>
+
+
+            <View style="@style/Divider_Home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_space"
+                android:layout_marginLeft="@dimen/general_space"
+                android:text="Fiction"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textsize_home" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fiction"
+                android:layout_marginLeft="@dimen/general_space"
+                android:id="@+id/fiction"/>
+
+            <View style="@style/Divider_Home" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_space"
+                android:layout_marginLeft="@dimen/general_space"
+                android:text="Business Books"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textsize_home" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Books"
+                android:layout_marginLeft="@dimen/general_space"
+                android:id="@+id/businessBooks"/>
+
+            <View style="@style/Divider_Home" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_space"
+                android:layout_marginLeft="@dimen/general_space"
+                android:text="Poetry"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textsize_home" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="Poetry"
+                android:layout_marginLeft="@dimen/general_space"
+                android:id="@+id/poetry"/>
+
+            <View style="@style/Divider_Home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_space"
+                android:layout_marginLeft="@dimen/general_space"
+                android:text="Science"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textsize_home" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_space"
+                android:text="Science"
+                android:layout_marginLeft="@dimen/general_space"
+                android:id="@+id/science"/>
+
+            <View style="@style/Divider_Home" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/general_space"
+                android:paddingTop="@dimen/general_space">
+
+                <Button
+                    android:id="@+id/allCategoriesHome"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimary"
+                    android:text="All Categories"
+                    android:layout_marginBottom="56dp"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

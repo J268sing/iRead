@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.iread.bookWithAdapterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageunique"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/general_space"
+                android:layout_weight="1" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/general_space"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bookName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    tools:text="Name of the Book " />
+
+                <TextView
+                    android:id="@+id/authorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    tools:text="Author" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pagesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pages: " />
+
+
+                    <TextView
+                        android:id="@+id/pages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        tools:text="Pages" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+                    <android.support.design.widget.FloatingActionButton
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="60dp"
+                        android:id="@+id/floatingActionButton"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        app:backgroundTint="@color/textColor"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true">
+
+                    </android.support.design.widget.FloatingActionButton>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View style="@style/Divider_Home" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_space"
+            android:layout_marginTop="@dimen/general_space"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_space"
+            tools:text="description" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_space"
+            android:layout_marginTop="@dimen/general_space"
+            android:text="Published Date"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/publishedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_space"
+            tools:text="published date" />
+
+    </LinearLayout>
+
+</ScrollView>

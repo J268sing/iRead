@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.iread.SettingsFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/profileSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/general_space"
+        android:layout_marginTop="@dimen/general_space"
+        android:paddingLeft="@dimen/general_space"
+        android:background="@color/white"
+        android:text="Profile"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor" />
+
+
+
+    <View style="@style/Divider_Settings" />
+
+    <Button
+        android:id="@+id/aboutSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/general_space"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/general_space"
+        android:text="About"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor" />
+
+
+    <View style="@style/Divider_Settings" />
+
+    <Button
+        android:id="@+id/suggestAFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/general_space"
+        android:background="@color/white"
+        android:text="Suggest a friend"
+        android:textAlignment="viewStart"
+        android:paddingLeft="@dimen/general_space"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor" />
+
+    <View style="@style/Divider_Settings" />
+
+
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEBE9"
+    android:orientation="vertical"
+    tools:context="com.example.android.iread.AboutActivity">
+
+    <ImageView
+        android:id="@+id/imageView_Home"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_fragment_image" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ethe app bare dsna aa jimen mybooks app in phone ch dseya aa "
+        android:textColor="#8D6E63"
+        android:paddingRight="@dimen/general_space"
+        android:paddingLeft="@dimen/general_space"
+        android:paddingTop="@dimen/general_space"/>
+
+    <View style="@style/Divider_Home" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APP INFORMATION"
+         android:paddingTop="@dimen/general_space"
+        android:paddingLeft="@dimen/general_space"
+        android:textColor="#757575"
+        android:paddingBottom="@dimen/separating_line"
+        />
+
+    <View style="@style/Divider_Settings" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/separating_line"
+        android:paddingBottom="@dimen/separating_line"
+        android:paddingLeft="@dimen/general_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8D6E63"
+            android:text="Version"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0"
+            android:textColor="#A1887F"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/general_space"/>
+    </RelativeLayout>
+
+    <View style="@style/Divider_Settings" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/separating_line"
+        android:paddingBottom="@dimen/separating_line"
+        android:paddingLeft="@dimen/general_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8D6E63"
+            android:text="Developer"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jashandeep Singh"
+            android:textColor="#A1887F"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/general_space"/>
+    </RelativeLayout>
+
+    <View style="@style/Divider_Settings" />
+
+
+
+</LinearLayout>
